@@ -1,0 +1,143 @@
+<!-- Layout: Anglr-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>PensaTRÔ</title>
+  <meta name="description" content="Angularjs, Html5, Music, Landing, 4 in 1 ui kits package" />
+  <meta name="keywords" content="AngularJS, angular, bootstrap, admin, dashboard, panel, app, charts, components,flat, responsive, layout, kit, ui, route, web, app, widgets" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+
+</head>
+<body>
+<div class="app app-header-fixed  app-aside-dock ">
+  
+  <!-- header -->
+  <header id="header" class="app-header navbar" role="menu">
+          <!-- navbar header -->
+      <div class="navbar-header bg-dark">
+        <button class="pull-right visible-xs dk" ui-toggle="show" target=".navbar-collapse">
+          <i class="glyphicon glyphicon-cog"></i>
+        </button>
+        <button class="pull-right visible-xs" ui-toggle="off-screen" target=".app-aside" ui-scroll="app">
+          <i class="glyphicon glyphicon-align-justify"></i>
+        </button>
+        <!-- brand -->
+        <a href="#/" class="navbar-brand text-lt">
+          <span class="hidden-folded m-l-xs">PensaTRÔ</span>
+        </a>
+        <!-- / brand -->
+      </div>
+      <!-- / navbar header -->
+
+      <!-- navbar collapse -->
+      <div class="collapse pos-rlt navbar-collapse box-shadow bg-white-only">
+
+        <!-- link and dropdown -->
+        <ul class="nav navbar-nav hidden-sm">
+          <li class="dropdown pos-stc">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+              <span>Páginas</span> 
+              <span class="caret"></span>
+            </a>
+            <div class="dropdown-menu wrapper w-full bg-white">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="m-l-xs m-t-xs m-b-xs font-bold">Utilitários</div>
+                  <div class="row">
+                    <!-- Rows -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- / link and dropdown -->
+        <!-- nabar right -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle clear" data-toggle="dropdown">
+              <span class="hidden-sm hidden-md">Admin</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+        <!-- / navbar right -->
+  </header>
+  <!-- / header -->
+  <!-- aside -->
+  <aside id="aside" class="app-aside hidden-xs bg-dark">
+          <div class="aside-wrap">
+        <div class="navi-wrap">
+
+          <!-- nav -->
+          <nav ui-nav class="navi clearfix">
+            <ul class="nav">
+              <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
+                <span>Utilitários</span>
+              </li>
+              <li>
+                  <a href class="auto">      
+                    <span class="pull-right text-muted">
+                      <i class="fa fa-fw fa-angle-right text"></i>
+                      <i class="fa fa-fw fa-angle-down text-active"></i>
+                    </span>
+                    <i class="glyphicon glyphicon-th"></i>
+                    <span>Calculadoras</span>
+                  </a>
+                  <ul class="nav nav-sub dk">
+                    <li class="nav-sub-header">
+                      <a href>
+                        <span>Irregularities</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <span>Multifuncional</span>
+                      </a>
+                    </li>   
+                  </ul>
+                </li>
+            </ul>
+          </nav>
+          <!-- nav -->
+        </div>
+      </div>
+  </aside>
+  <!-- / aside -->
+  
+  <!-- content -->
+  <div id="content" class="app-content" role="main">
+    <div class="app-content-body m-t-sm">
+          </div>
+  </div>
+  <!-- / content -->
+
+  <!-- footer -->
+  <footer id="footer" class="app-footer" role="footer">
+        <div class="wrapper b-t bg-light">
+      <span class="pull-right">2.0.0 <a href ui-scroll="app" class="m-l-sm text-muted"><i class="fa fa-long-arrow-up"></i></a></span>
+      &copy; 2015 Copyright.
+    </div>
+  </footer>
+  <!-- / footer -->
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/ui-load.js"></script>
+<script src="js/ui-jp.config.js"></script>
+<script src="js/ui-jp.js"></script>
+<script src="js/ui-nav.js"></script>
+<script src="js/ui-toggle.js"></script>
+
+</body>
+</html>
