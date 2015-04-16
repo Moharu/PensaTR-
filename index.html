@@ -20,10 +20,46 @@
   <!-- Menus --><aside id="aside" class="app-aside hidden-xs bg-dark"></aside>
   
   <!-- content -->
-  <div class="app-content" id="content" role="main">
-    <div ng-app="pensatroApp" class="app-content-body m-t-sm">
-      <div ng-controller="MainCalcController" ng-cloak="true">
+  <div class="app-content" ng-app="pensatroApp" id="content" role="main">
+    <div ng-controller="MainCalcController" class="app-content-body bg-black dker wrapper-lg">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <div class="text-center m-b h2 font-thin">
+          Calculadora de Letras/Números
+        </div>
+        <div class="input-group m-b">
+          <input type="text" class="form-control text-right input-lg" ng-model="input"></input>
+          <span class="input-group-btn">
+            <button class="btn w-m btn-success btn-lg" ng-click="calculate(input)">Calcular</button>
+          </span>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading text-center">
+            Respostas recentes
+          </div>
+          <div>
+            <table class="table m-b-none default footable-loaded footable" ui-jq="footable">
+              <thead>
+                <tr>
+                    <th class="footable-visible text-right b-r">
+                      Input
+                    </th>
+                    <th class="footable-visible text-left" style="width: 50%">
+                      Output
+                    </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="footable-even" style="display: table-row;" ng-repeat="calc in calculations">
+                    <td class="footable-visible text-right b-r">{{calc.input}}</td>
+                    <td class="footable-visible text-left">{{calc.output}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
+      <div class="col-lg-3"></div>
     </div>
   </div>
   <!-- / content -->
