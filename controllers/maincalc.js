@@ -37,7 +37,9 @@ pensatroApp.controller('MainCalcController', function ($scope){
 
 function replaceCharWithNumbers (string){
 	var result = '';
-
+	if (string.charAt(0) == '-'){
+		result += '1+'	
+	}
 	for (var i=0; i < string.length; i++){
 		var evaluatedChar = string.charAt(i);
 		if (isNaN(evaluatedChar)){
@@ -58,9 +60,11 @@ function replaceCharWithNumbers (string){
 
 function alphabetEval (string){
 	value = eval(string);
+	var displayVal = value;
+	displayVal -= displayVal <= 0 ? 1 : 0;
 	var letter = checkLetter(value);
-
-	var response = letter + ' (' + value.toString() + ')';
+	
+	var response = letter + ' (' + displayVal.toString() + ')';
 	return response;
 }
 
